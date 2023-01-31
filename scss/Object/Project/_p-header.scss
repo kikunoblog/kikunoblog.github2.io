@@ -1,0 +1,110 @@
+.p-header {
+  height: 217px;
+  background-color: #fff7ef;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 218px;
+    justify-content: space-between;
+    //display: block;
+    align-items: center;
+    flex-direction: row;
+
+  }
+  &__title {
+    margin: 10px;
+    font-size: 35px;
+    color: #707070;
+    font-family: Roboto;
+    font-weight: bold;
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      margin: 0px 0px 0px 20px;
+      position: relative;
+      font-size: 5vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      //margin: 7vw 0px 0px 2vw;
+    }
+  }
+}
+.p-header__menu {
+  display: block;
+  font-size: 22px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    font-size: 4vw;
+    top: 10px;
+    right: 30px;
+  }
+  @media only screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.p-search-box {
+  margin: 10px 115px 0px 0px;
+  width: 190px;
+  height: 40px;
+  border-radius: 4px;
+  display: inline-block; /* なくても大丈夫だけど、念の為 */
+  position: relative; /* 基準値とする */
+  border: solid 1px #999;
+  background-color: #fff;
+  padding-left: 10px;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    margin: 40px 170px 0px 0px;
+    //padding-left: 10px;
+    width: 396px;
+    height: 46px;
+    border-radius: 10px;
+  }
+  @media only screen and (min-width: 1025px) {
+    margin: 10px 210px 0px 0px;
+  }
+  &::before {
+    content: ""; /* 疑似要素に必須 */
+    width: 16px; /* アイコンの横幅 */
+    height: 16px; /* アイコンの高さ */
+    background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute; /* 相対位置に指定 */
+    top: 12px; /* アイコンの位置 */
+    left: 9px; /* アイコンの位置*/
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    width: 24px; /* アイコンの横幅 */
+    height: 24px; /* アイコンの高さ */
+    }
+    @media only screen and (min-width: 1025px) {
+    }
+  }
+  & input {
+    padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
+    width: 100%;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    }
+
+    @media only screen and (min-width: 1025px) {
+    }
+  }
+}

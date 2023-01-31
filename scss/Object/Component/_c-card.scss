@@ -1,0 +1,85 @@
+.c-card{
+  margin-bottom:20px;
+  justify-content: center;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+  }
+  @media only screen and (min-width: 1025px) {
+  }
+
+
+  &--pic{
+    
+    //background-size: cover;
+    width: 50vw;
+    height: 231px;
+    object-fit: cover;
+    //display: flex;
+    //background-position: center;
+  
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      background-size: cover;
+  
+      height: 354.5px;
+  
+      object-fit: cover;
+    
+      
+    }
+    @media only screen and (min-width: 1025px) {
+      //height: 530px;
+     
+    }
+  }
+
+  &--intro{
+    position: relative;
+    padding: 23px 17px 45px;
+    background-color: #3C2B1C;
+    color: #FFFFFF;
+    height: auto;
+    object-fit: cover;
+    height: 354.5px;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    }
+    @media only screen and (min-width: 1025px) {
+      //height: 530px;
+     
+    }
+  
+
+
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        margin: 10px 20px;
+        }
+
+    
+    h4{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        margin: 30px 20px 15px ;
+        
+        }
+    
+    p{
+        font-size: 16px;
+        text-align: left;
+        margin: 0vh 40px 0px 20px;
+        line-height: 1.3;
+        color: #FFFFFF;
+    }
+  
+  }
+
+
+}

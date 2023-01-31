@@ -1,0 +1,220 @@
+.p-sidebar {
+  background-color: #f2ede9;
+  width: 87.5%;
+  //height: 2843px;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 0vw;
+  height: 100%;
+  //position: fixed;
+  //サイドバーのメニューが右からスライドしてくるような設定
+  right: -100%;
+  transition: right 0.5s;
+  //スクロールさせるための設定
+  overflow-y: auto;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+
+    width: 44%;
+    //height: 1825px;
+    //z-index: 1000;
+    position: absolute;
+    top: 0vw;
+    //right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right 0.5s;
+  }
+  @media only screen and (min-width: 1025px) {
+    //他のサイズ時にサイドメニューを隠しておく設定をしているがそれを無しにするためにinitial
+   position: initial;
+
+   right: 0%;
+    //PCサイズ画面の場合はサイドメニューは常に出ているので、このwidthで位置もこのままで設定
+    width: 100%;
+    //height: 100%;
+    //z-index: 100000;
+  background-repeat: repeat-y;
+  overflow-y: hidden;
+  
+
+  
+  }
+
+
+  &__top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+    display: none;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: #707070;
+      margin: 70px 0px 10px 30px;
+      display: none;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: #707070;
+      margin: 7vw 0vw 1vw 2vw;
+      display: block;
+    }
+  }
+  &__second {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 37vw 0vw 2vw 3vw;
+    list-style: none;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-size: 2.5vw;
+      font-weight: bold;
+      color: #707070;
+      margin: 22vw 0vw 2vw 3vw;
+      list-style: none;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.3vw;
+      font-weight: bold;
+      color: #707070;
+      margin: 80px 0px 20px 30px;
+      list-style: none;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__second2 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 37vw 0vw 2vw 3vw;
+    list-style: none;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-size: 2.5vw;
+      font-weight: bold;
+      color: #707070;
+      margin: 50px 0px 20px 30px;
+      list-style: none;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.3vw;
+      font-weight: bold;
+      color: #707070;
+      margin: 50px 0px 20px 30px;
+      list-style: none;
+    }
+  }
+
+  &__menu {
+    font-size: 1.2vw;
+    color: #707070;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-size: 1.2vw;
+      color: #707070;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.2vw;
+      color: #707070;
+    }
+  }
+  &__list {
+    font-size: 5vw;
+    line-height: 2.5;
+    padding-left: 40px;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-size: 2vw;
+      line-height: 2.5;
+      padding-left: 40px;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.2vw;
+      line-height: 2.5;
+      padding-left: 40px;
+      padding-bottom: 30px;
+     
+    }
+  }
+}
+
+.p-sidebar.is-open {
+  right: 0%;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+.p-menu-trigger {
+  color: #707070;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  transform: translateX(0);
+  transition: transform 0.5s;
+  vertical-align: middle;
+  @media only screen and (min-width: 600px) {
+  }
+  @media only screen and (min-width: 1025px) {
+    display: none;
+  }
+  &::after {
+    content: "×";
+    font-size: 3rem;
+    margin-top: -20px;
+    @media only screen and (min-width: 600px) {
+    }
+    @media only screen and (min-width: 1025px) {
+      display: none;
+    }
+  }
+}
+
+//高さの設定は、l-sidebarの高さよりも高くすることで、スクロールを効くようにするため
+.p-responsive-menu {
+  //height: 4543px;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    //height: 2543px;
+  }
+  @media only screen and (min-width: 1025px) {
+    //
+   height: 100%;
+    
+  }
+  &.sp_open {
+    right: 0;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      // height: 2543px;
+    }
+    @media only screen and (min-width: 1025px) {
+      //（ここにPC用スタイルを記述）
+    }
+  }
+}
+.p-menu-trigger.sp_open {
+  right: -100%;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    //（ここにPC用スタイルを記述）
+  }
+}

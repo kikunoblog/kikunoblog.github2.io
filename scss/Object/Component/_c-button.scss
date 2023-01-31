@@ -1,0 +1,62 @@
+
+#c-button--header {
+  font-size: 16px;
+    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: -100px;
+    top: -1px;
+    border-radius: 4px;
+    background: linear-gradient(#f2ede9, #ded8d3);
+    border: 1px solid #999;
+    color: #707070;
+    padding: 0px 26px;
+    font-size: 1rem;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      width: 136px;
+      height: 46px;
+      right: -150px;
+      padding: 0px 50px;
+      border-radius: 10px;
+    }
+    @media only screen and (min-width: 1025px) {
+    }
+  }
+  
+  .c-button--archive{
+
+    display: block;
+    margin: 0 auto;
+    width: 163px;
+    height: 42px;
+    background-color: #FFFFFF;
+    color: #707070;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    }
+    display: block;
+    margin: 0 auto;
+    width: 163px;
+    height: 42px;
+    background-color: #FFFFFF;
+    color: #707070;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 1vh;
+
+
+    @media only screen and (min-width: 1025px) {
+    }
+  
+  }

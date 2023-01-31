@@ -1,0 +1,31 @@
+.p-page-btn{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top:4vh;
+    margin: 5vh -3vw 5vh 0vw;
+
+    @media only screen and (min-width: 600px) {
+        //（ここにタブレット用スタイルを記述）
+        display: none;
+      }
+      @media only screen and (min-width: 1025px) {
+
+}
+}
+
+.p-page-btn--prev{
+    position: absolute;
+    top:-6vh;
+    left: 3vh;
+
+    
+    
+}
+
+.p-page-btn--next{
+    position: absolute;
+    top: -6vh;
+    right: 4vh;
+  
+}

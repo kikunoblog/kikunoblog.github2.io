@@ -1,0 +1,540 @@
+
+/*.p-main__image
+「ダミーサイト」の画像
+*/
+.p-main__image {
+  background-image: url("../images/iphone2.png");
+  background-size: cover;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  display: flex;
+  background-position: center;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    background-image: url("../images/ipad.png");
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 530px;
+    background-image: url("../images/mainvisual-pc.jpg");
+  }
+}
+
+.p-archive__image{
+  background-image: url("../images/page-title_arcive@2x.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 283px;
+  object-fit: cover;
+  display: flex;
+  background-position: center;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    background-image: url("../images/page-title_arcive@2x.jpg");
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 530px;
+    background-image: url("../images/page-title_arcive@2x.jpg");
+  }
+}
+.p-archive__image::before{
+  background-color: rgba(0,0,0,.4);
+  position: absolute;
+  content:"";
+  width: 100%;
+  height: 283px;
+  
+
+}
+
+/* 
+p-main__image__title
+「Menu:チーズバーガー」の画像に記載の文字「Menu:」の装飾
+*/
+.p-main__image__title {
+
+  font-size: 43px;
+  margin-left: 35px;
+  font-weight: bold;
+  align-self: center;
+  color: #fff;
+  font-family: "M+ 1m";
+  z-index: 10;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+
+    font-size: 60px;
+    font-family: Roboto;
+    margin-left: 90px;
+  }
+  @media only screen and (min-width: 1025px) {
+  }
+}
+/* 
+p-main__image__subtitle
+「Menu:チーズバーガー」の画像に記載の文字「チーズバーガー」の装飾
+*/
+.p-main__image__subtitle {
+  font-size: 17px;
+  margin-top: 180px;
+  margin-left: -100px;
+  font-weight: bold;
+  align-self: center;
+  color: #fff;
+  font-family: "M+ 1m";
+  z-index: 10;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    margin-top: 139px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 24px;
+  }
+  @media only screen and (min-width: 1025px) {
+    margin-top: 240px;
+  }
+}
+
+
+
+/* 
+p-two-image-wrapper
+「ダミーサイト」の画像の下２つの並ぶ画像をまとめた部分
+*/
+.p-two-image-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 4vw;
+  justify-content: center;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    display: flex;
+    //height: 758px;
+    //padding: 0px;
+    justify-content:start;
+  } 
+  @media only screen and (min-width: 1025px) {
+    width: 100%;
+    //height: 1446px;
+    //padding: 120px 4vw 134px 4vw;
+  }
+}
+
+/*p-left-wrapper
+「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
+*/
+.p-left-wrapper {
+  display: flex;
+  min-height: 643px;
+  max-width: 599px;
+  background-image: url(../images/i-sub1.png);
+  background-size: cover;
+  margin-bottom: 10px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    min-height: 681px;
+    width: 50%;
+    margin-right: 5vw;
+    margin-bottom: 0px;
+    background-image: url(../images/main2.png);
+  }
+  @media only screen and (min-width: 1025px) {
+    min-height: 1196px;
+    max-width: auto;
+   
+  }
+}
+
+/*
+p-right-wrapper 
+「ダミーサイト」の画像の下２つの並ぶ画像の右の画像
+*/
+
+.p-right-wrapper {
+  min-height: 643px;
+  max-width: 599px;
+  background-image: url(../images/i-sub2.png);
+  background-size: cover;
+  margin: 20px 0px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    min-height: 681px;
+    width: 50%;
+    margin: 0px 0px 0px 0px;
+    background-image: url(../images/main3.png);
+  }
+  @media only screen and (min-width: 1025px) {
+    min-height: 1196px;
+    max-width: auto;
+    
+  }
+}
+
+/*
+.p-left-wrapper__link,
+.p-right-wrapper__link
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
+その全体にリンクを設定するための装飾
+*/
+
+.p-left-wrapper__link,
+.p-right-wrapper__link {
+  padding: 0vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    padding: 1vw 0.5vw 0vw 1.5vw;
+  }
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+/*
+p-wrapper-text 
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
+書いてあるTake out Eat INの文字の装飾
+*/
+
+.p-wrapper-text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  padding: 5vw 0vw 0vw 5vw;
+  position: relative;
+  font-weight: bold;
+  align-content:space-between;
+  @media only screen and (min-width: 600px) {
+    font-size: 6vw;
+    padding: 0px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    font-size: 4vw;
+  }
+
+/*  
+p-wrapper-text ::before
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
+書いてあるTake out Eat INの文字の下に記載されている横棒の作成・装飾
+*/
+
+  &::before {
+    position: absolute;
+    background-color: #fff;
+    content: "";
+    height: 4px;
+    top: 100px;
+    left: 5vw;
+    width: 50px;
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      left: 3px;
+    }
+    @media only screen and (min-width: 1025px) {
+    }
+  }
+}
+
+/* 
+p-text-box-a
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックス２つをまとめた
+*/
+
+.p-text-box-a {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px 5px;
+  align-content:space-between;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    width: 97%;
+  }
+
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+
+/*p-text-box-1.2
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックス
+*/
+
+.p-text-box1,
+.p-text-box2 {
+  margin-bottom: 1vw;
+  padding: 10px 15px 20px;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+/* 
+.texttitle
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックスに記載の文字の装飾
+*/
+
+
+.texttitle {
+  font-weight: bold;
+  padding-top: 0.5vw;
+  font-size: 24px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    font-weight: bold;
+    padding-top: 0.5vw;
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+/*
+.p-text-title2
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックスに記載の文字の装飾
+*/
+
+.p-text-title2 {
+  font-size: small;
+  padding-top: 1vw;
+  font-size: 16px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    font-size: small;
+    padding-top: 1vw;
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+  }
+}
+
+/*
+.map
+地図部分の装飾
+*/
+
+
+.p-map {
+  //width:100%;
+  max-width: 599px;
+  height: 100%; //691px;
+  background-image: url(../images/i-map.png);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  min-height: 691px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    max-width: 1024px;
+    min-height: 415px;
+  }
+  @media only screen and (min-width: 1025px) {
+    //height: 649px;
+    background-image: url(../images/map.png);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 649px;
+   
+  }
+
+  
+//地図部分にかぶせているレイヤーの作成と装飾
+
+  &::before {
+    width: 100%;
+    height: 691px;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.29);
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      width: 100%;
+      height: 415px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      width: 100%;
+      height: 649px;
+    }
+  }
+  
+//地図部分記載の文字の装飾
+
+  &__text {
+    width: 100%;
+    //height: 100%; //691px;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute ;
+    top:0;
+    bottom:0;
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+
+      align-content: center;
+      //height:100%; //415px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 7vh;
+      padding-bottom: 7vh;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      //height: 100% //649px;
+    }
+  }
+   
+
+//地図部分記載のもう一つのレイヤーの装飾
+
+  &__text::before {
+    width: 100%;
+    height: 415px;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    }
+    @media only screen and (min-width: 1025px) {
+      width: 60%;
+      height: 649px;
+    }
+  }
+  
+
+//地図部分記載の文字の装飾
+
+  &__title {
+    font-size: 7vw;
+    padding-bottom: 10vw;
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-size: 3vw;
+      width: 100%;
+      z-index: 1;
+      font-size: 2vw;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 2.5vw;
+    }
+  }  
+
+//地図部分記載の文字の下部の横棒の装飾
+
+  &__title::before {
+    background-color: #fff;
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 15vw;
+    width: 63px;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      top: 8vw;
+    }
+    @media only screen and (min-width: 1025px) {
+    }
+  }
+  
+
+//地図部分記載の文字の装飾
+
+  &__subtext {
+    width: 100%;
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    padding-top: 0;
+    z-index: 1;
+    color: #fff;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      width: 100%;
+      font-size: 0.87rem;
+      font-weight: bold;
+      line-height: 1.9rem;
+      padding-top: 0;
+    }
+    @media only screen and (min-width: 1025px) {
+      z-index: 1;
+      color: #fff;
+      width: 56%;
+      line-height: 1.5;
+    }
+  }
+}
+
+//アーカイブページのヘッダー下の画像の下のテキスト部分の装飾
+.p-main__archive{
+  padding: 3vh 0vw 1vh 3vw;
+
+  >h2{
+      color: #3C2A10;
+      font-size: 28px;
+      font-weight: bold;
+      margin: 25px 0;
+      text-align: left;
+      @media only screen and (min-width: 600px) {
+        font-size: 4.3vw;
+        margin: 4vh 4vw;
+      }
+      @media only screen and (min-width: 1025px) {
+
+      }
+
+    }
+  }
+  >p{
+      color: #3C2A10;
+      font-size: 16px;
+      margin-bottom: 22px;
+      line-height: 1.5;
+
+      @media only screen and (min-width: 600px) {
+        color: #3C2A10;
+        font-size: 2vw;
+        margin: 0vh 3vw 5vh 3vw;
+        line-height: 1.4;
+        font-family: "M+ 1m";
+  }
+  @media only screen and (min-width: 1025px) {
+
+  }
+
+}

@@ -1,0 +1,71 @@
+/* 
+l-container
+全体をレイアウトしているクラス。
+スマホ：高さ2716px
+タブレット：height1825pxにする。折り返しはしないようにする。
+PC：幅と高さを設定。flexとwrapで横並びになるようにする。
+レイアウトなどの高さは設定しないとのことで講師からアドバイスがあったため、autoにした
+が、そもそもデフォルトがautoなので設定不要
+*/
+
+.l-container {
+  
+
+  
+    display: grid;
+    grid-template:
+    "l-main            " 1fr
+    "l-footer             " 150px
+  / 1fr ;
+  
+    .l-header {
+      grid-area: l-header;
+    }
+    
+    .p-sidebar{
+      grid-area: p-sidebar;
+    }
+  
+    
+    .l-main {
+      grid-area: l-main;
+    }
+    
+    .l-footer {
+      grid-area: l-footer;
+    }
+  
+    height: 100%;
+    //display: block;
+    //flex-wrap: nowrap;
+    width: 100%;
+    //overflow: hidden;
+    //position: relative;
+    //position: fixed;
+    //display: flex;
+    //background-attachment:fixed;
+  
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      display: grid;
+      grid-template:
+      "l-main l-main l-main           " 1fr
+      "l-footer l-footer l-footer             " 150px
+    / 1fr 1fr 367px;
+  
+    }
+    @media only screen and (min-width: 1025px) {
+      //（ここにパソコン用スタイルを記述）
+      width: 100%;
+      height: 100%;
+      //height: 2993px;
+      //display: flex;
+      //flex-wrap: wrap;
+      //display: grid;
+      grid-template:
+      "l-main l-main p-sidebar            " 1fr
+      "l-footer l-footer l-footer             " 150px
+    / 1fr 1fr 367px;
+   
+    }
+  }
